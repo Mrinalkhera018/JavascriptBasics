@@ -1,0 +1,16 @@
+<html>
+<script>
+const brands = ["ford","nisaan"];
+const otherBrands = ["Audi","BMW"];
+
+//old ES5 way
+
+/*
+const newArray = brands.concat(otherBrands);
+newArray.push("SomeOtherBrand");
+*/
+//new ES6 way
+const newArray = [...brands,...otherBrands,'SomeOtherBrand'];
+console.log(newArray);
+</script>	
+</html>

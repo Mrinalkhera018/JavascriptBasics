@@ -1,0 +1,17 @@
+<html>
+<script>
+function* logGenerator() {
+	alert('How may i hep you?');
+	yield 'step1 doneee'
+
+	alert('your order was pizza and cake');
+	yield 'step2 donee'
+
+	alert('Thanks for eating here')
+	yield 'step3 donee'
+
+	return 'finished'
+}
+const gen = logGenerator();
+</script>	
+</html>

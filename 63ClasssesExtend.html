@@ -1,0 +1,25 @@
+<html>
+<script>
+class Car {
+constructor()
+{
+this.colour = 'black';
+this.wheels = 4;
+this.avail = ()=> console.log('Available');
+}
+// thisWontBeThePartOfCarClass = () => console.log('heyyy');
+otherfunction(){console.log('hey');}
+}
+class Ford extends Car{
+constructor(){
+super();
+}
+}
+const car = new Car();
+const ford = new Ford();
+console.log(car);
+console.log(ford);
+
+
+</script>	
+</html>

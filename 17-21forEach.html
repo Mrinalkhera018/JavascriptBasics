@@ -1,0 +1,37 @@
+<html>
+<body></body>
+<script>
+
+let artists = ['bruno mars','Selena gomez' , 'Michel jackson'];
+let template='';
+artists.forEach(artist = (artist)=>{
+template +=`<b>Hi my fav artist is ${artist}</b><br/>`
+});
+document.body.insertAdjacentHTML("afterbegin",template);
+
+
+
+let purchases = [
+{quantity: 20 ,amount:100},
+{quantity:30 , amount:200}
+];
+let temp='';
+
+purchases.forEach(item=(item)=>{
+	discount=()=>{
+	if(item.amount > 100)
+	{
+		return `<mark>Sale on ${item.amount}</mark>`;
+	}
+	else
+	{
+		return `No sale`;
+	}
+}  
+	temp += `${discount()}`;
+});
+document.body.insertAdjacentHTML("afterbegin",temp);
+
+</script>
+
+</html>

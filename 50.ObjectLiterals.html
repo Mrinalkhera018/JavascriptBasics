@@ -1,0 +1,15 @@
+<html>
+<script>
+const ObjectLiterals = (name,password) => {
+	return{
+		name,     //name:name before ES6
+		password,  //password:password before ES6
+        getFriends(){ return `John Doe` },
+        getEnimies(){return `Michel`}
+	}
+}
+const output = ObjectLiterals('snake','poison');
+console.log(output.getFriends());
+console.log(output.getEnimies());
+</script>
+</html>

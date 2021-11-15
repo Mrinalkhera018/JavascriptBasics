@@ -1,0 +1,14 @@
+<html>
+<script>
+const promise = new Promise((Resolved,Rejected)=>{
+  setTimeout(()=>{
+      Rejected();
+  },5000)
+});
+
+promise
+.then(()=>console.log("If promise is resolved it will print FINISHED afrer 5 sec"))
+.then(()=>console.log("If promise is resolved it will print FINISHED 2 after 5 sec"))
+.catch(()=>console.log("If promise is Rejected it will print FINISHED after 5 sec"))
+</script>	
+</html>

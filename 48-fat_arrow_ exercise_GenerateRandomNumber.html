@@ -1,0 +1,13 @@
+<html>
+<script>
+const names = ["James","Thomas","Roy","Joe"];
+
+//Random Name Function
+let RandomName = items => items[Math.floor(Math.random() * items.length)];
+
+//Random Number Function
+let RandomNumber = (MaxNum,MinNum) => Math.floor(Math.random() * MaxNum) + MinNum;
+
+console.log(`The Random name is ${RandomName(names)} && its magic number is ${RandomNumber(5,2)}`);
+</script>
+</html>

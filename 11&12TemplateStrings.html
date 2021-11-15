@@ -1,0 +1,21 @@
+<html>
+<div class ="user-list"> </div>
+	
+<script>
+	
+	let list = document.querySelector('.user-list');
+  addUser = (firstName,lastName)=>{
+  let template = `<div class ='user'>
+  <div>${firstName}</div>
+  <div>${lastName}</div>
+  </div>`;
+  list.insertAdjacentHTML("beforeend", template);
+ }
+ addUser('Mrinal','Khera');
+ addUser('John','Doe');
+ console.log('This\nWas\nAwesome\xa0'); 
+ console.log(String.raw`This\nWas\nAwesome\xa0`);
+ 
+
+</script>
+</html>

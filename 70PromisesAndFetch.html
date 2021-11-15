@@ -1,0 +1,32 @@
+<html>
+<script>
+// const url = 'https://jsonplaceholder.typicode.com/todos/1'
+// console.log(fetch(url))
+
+// fetch(url)
+// .then(data => console.log(data))
+
+// //without method request
+// fetch(url)
+// .then(response=>response.json())
+// .then(data => console.log(data))
+// .catch(error => console.log('oops',error)) //if error in url . BUt if error in todos no. i.e instead of 1 if the number is very large thenn 404 error will come and we will get empty object because it will be going to the cthen and not catch
+
+// with method request post request
+const url = 'https://jsonplaceholder.typicode.com/todos'
+fetch(url,{
+	method:'POST',
+	headers:{
+		'content-type':'application/json'
+	},
+	body:JSON.stringify({title:'some dum title'}),
+	mode:'cors',
+	
+
+})
+.then(response=>response.json())
+.then(data => console.log(data))
+.catch(error => console.log('oops',error))
+
+</script>	
+</html>

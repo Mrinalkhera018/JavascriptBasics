@@ -1,0 +1,64 @@
+<html>
+<script>
+	//ES5 repetion
+// var user = {
+// 	name:'John',
+// 	car:'ford'
+// }
+
+// name = user.name;
+// car = user.car;
+// console.log(`${name} ${car}`);
+
+//ES6
+// const user = {
+// 	name:'John',
+// 	car:'ford'
+// }
+
+// const {name} = user;
+// const {car} = user;
+// console.log(`${name} ${car}`);
+
+//More Better
+// const user = {
+// 	name:'John',
+// 	car:'ford'
+// }
+
+// const {name,car} = user;
+// console.log(`${name} ${car}`);
+
+//Or
+// const user = {
+// 	name:'John',
+// 	car:'ford'
+// }
+// message = (user) => console.log(`My name is ${user.name} and i have $(user.car)`);
+
+// message(user);
+
+//better
+// const user = {
+// 	name:'John',
+// 	car:'ford'
+// }
+// message = ({name,car},salute) => console.log(`My name is ${name} and I have ${car} ${salute}`);
+
+// message(user,'hey');
+
+//VIDEO 65
+const cars = ["Audi","BMW","Nisaan"];
+
+// const audi = cars[0];
+// const Bmw = cars[1];
+// console.log(audi);
+// console.log(Bmw);
+
+const [audi,...rest] = cars;
+console.log(audi);
+console.log(rest);
+
+
+</script>	
+</html>

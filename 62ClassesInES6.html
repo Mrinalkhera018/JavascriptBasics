@@ -1,0 +1,35 @@
+<html>
+<script>
+// class Car {
+// constructor(operator)
+// {
+// this.colour = operator.colour;
+// this.wheels = operator.wheels;
+// this.avail =  operator.avail;
+// }
+
+// }
+// const car = new Car({
+// 	colour:'black',
+// 	wheels:4,
+// 	avail:()=>console.log('Available')
+// })
+// console.log(car);
+class Car {
+constructor({colour,wheels,avail})
+{
+this.colour = colour;
+this.wheels = wheels;
+this.avail =  avail;
+}
+
+}
+const car = new Car({
+	colour:'black',
+	wheels:4,
+	avail:()=>console.log('Available')
+})
+console.log(car);
+
+</script>	
+</html>

@@ -1,0 +1,24 @@
+<html>
+<div>Div1</div>
+<div>Div2</div>
+<div>Div3</div>
+<script>
+var divs = document.getElementsByTagName('div');
+//in case of var it will only print the last div no matter which div you click
+
+/*for(var i=0;i<divs.length;i++)
+{
+	divs[i].addEventListener('click',()=>{                                
+  console.log('you clicked div' + i);
+	});
+}*/
+// if i use let then it will work for each div
+for(let i=0;i<divs.length;i++)
+{
+	divs[i].addEventListener('click',()=>{                                
+  console.log('you clicked div' + i);
+	});
+}
+
+</script>
+</html>

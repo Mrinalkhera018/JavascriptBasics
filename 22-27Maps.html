@@ -1,0 +1,26 @@
+<html>
+<select></select>
+<script>
+const numbers = [1,2,3,4,5];
+const otherArray = numbers.map(number = (number)=>{
+	return number * 10;
+});
+console.log(otherArray);
+
+
+const names = [
+ {name:'Mrinal',Age:20},
+ {name:'John',Age:21}
+];
+const name = names.map(item=(item)=>{
+  return item.name; 
+});
+console.log(name);
+name.forEach(it = (it)=>{
+	const select = document.querySelector('select');
+	select.insertAdjacentHTML("afterbegin",`<option value = ${it}> ${it} </option>`)
+});
+
+
+</script>
+</html>

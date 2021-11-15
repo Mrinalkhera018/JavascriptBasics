@@ -1,0 +1,33 @@
+<html>
+<script>
+const students = [
+{name:"Mrinal" ,Grade: 10},
+{name:"john" ,Grade: 6},
+{name:"Mark" ,Grade: 5},
+];
+//every : even if 1 is false it will return false
+/*let allStudentdsResult = false;
+for(let i=0;i<students.length;i++)
+{
+	if(students[i].Grade <6)
+	{
+       allStudentdsResult = false;
+       break;
+	}
+	else
+	{
+		allStudentdsResult = true;
+	}
+}
+console.log(allStudentdsResult);*/
+/*let allStudentdsResult = students.every(student = (student) =>{
+return student.grade >=6;
+});
+console.log(allStudentdsResult);*/
+// Some :even if 1 is true it will return true
+let allStudentsResult = students.some(student = (student)=>{
+ return student.Grade >=6;
+});
+console.log(allStudentsResult);
+</script>	
+</html>

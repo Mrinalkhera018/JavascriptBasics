@@ -1,0 +1,49 @@
+<html>
+<script>
+const previous = 200;
+const current = [
+{expence:"Guitar" , amount:200},
+{expence:"Mic" , amount:100},
+{expence:"Strap" , amount:100}
+];
+const result = current.reduce((sum,curr)=>{
+return sum + curr.amount;
+},previous);
+console.log(result);
+
+
+const result2 = current.reduce((start,curr)=>{
+	start.push(curr.expence)
+	return start
+},[])
+console.log(result2);
+
+
+//method 1
+const computers = [
+   {type:'Laptop',price:124, os:'Windows'},
+   {type:'Desk',price:124, os:'Mac'},
+   {type:'Desk',price:124, os:'Windows'},
+   {type:'Laptop',price:124, os:'Mac'},
+   {type:'Laptop',price:124, os:'Windows'},
+];
+let result3 = computers.reduce((start,item)=>{
+ //method 2
+	return item.os ==='Mac'?  {mac:start.mac + 1,windows:start.windows} : {mac:start.mac ,windows:start.windows + 1}
+	//method1
+/*	if(item.os==='Mac')
+	{
+        return {mac:start.mac + 1,windows:start.windows}
+	}
+    else{
+	
+	return {mac:start.mac ,windows:start.windows + 1}
+    }*/
+},{mac:0,windows:0})
+console.log(result3);
+
+
+
+
+</script>
+</html>

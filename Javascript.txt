@@ -1,0 +1,164 @@
+JAVASCRIPT
+
+VIDEO 1.
+1.full form of ES6.
+2.ES4 never used
+3.ES5 current version
+4. NOt all browsers support ES6 so BABLE and Nodejs converts ES6 to ES5 so every browser can run it(Safe to run)
+
+VIDEO 2.
+const and let
+const : no change in value
+let   : Can change 
+
+VIDEO 3.
+const and let using scope(Sublime example)
+
+VIDEO 4.
+const and let real life example(Sublime example)
+document.getElementsBytageName('');
+
+Video 5. Exercise
+var name = "james"
+var employeId=25
+var eyes ="Blue"
+var age = 25
+var position="Developer"
+var salary=2500
+var knowledgr = ["js","php","REACT"]
+var married=false
+
+VIDEO 6. Solution
+const name = "james"
+const employeId=25
+const eyes ="Blue"
+let age = 25
+let position="Developer"
+let salary=2500
+let knowledgr = ["js","php","REACT"]
+let married=false
+if you try to change the value of const js will give you an error message
+
+VIDEO 7 and 8 another const let exercise
+
+VIDEO 9 : template strings (backtick) (Sublime)
+VIDEO 10 : template strings can fetch arrays, used with objects, and many more
+VIDEO 11 : template strings (Sublime)
+document.querySelector('');
+element.insertAdjacentHTML(position, text);
+p : 'beforebegin': Before the element itself.
+'afterbegin': Just inside the element, before its first child.
+'beforeend': Just inside the element, after its last child.
+'afterend': After the element itself.
+
+VIDEO 12:\xa0 for space \n for next line
+
+VIDEO 13 & 14 : EXERCISE
+
+VIDEO 15 & 16 : Exercise
+
+VIDEO 17,18,19,20,21: Foreach
+helpers :
+forEach map filter find every some reduce for..in
+
+VIDEO 22 23 24 25 26 27 : Maps
+Maps always return arrays
+
+
+VIDEO 28-33 : Filter
+filter searches all
+ 
+VIDEO 34 & 35: Find
+filter searches all 
+find returns the 1st it finds works just like the switch case
+
+VIDEO 36 : Every (even if 1 is false then everything will return false)
+VIDEO 37 : Every_Some(even if 1 is true it will return true)
+
+VIDEO 38-43 :Reduce (can do everything)
+
+VIDEO 44  :for..of
+VIDEO 45 46 : fat arrow functions
+VIDEO 48 : fat arrow exercise
+
+VIDEO 50 : ObjectLiterals
+VIDEO 53,54,55 : Default Function Arguments
+
+VIDEO 56:REST OPERATOR
+suppose function(arg1,arg2,arg3,...)
+we can write(...args)
+
+VIDEO 57:SPREAD OPERATOR
+Like in ES5 we have COncat method 
+in ES6 we have spread operator 
+
+VIDEO 60: Exercise REST and SPREAD
+
+VIDEO 61:ClassesInES5
+prototype , proto
+
+VIDEO 62:ClassesInES6
+
+VIDEO 63:classesExtend
+
+VIDEO 64 65 :Destructoring
+
+VIDEO 66:Destructoring
+
+VIDEO 67:Destructoring
+function Mycars({brand,color,type,year})
+{
+
+}
+
+Mycars("ford","Red","Fast",2021);
+now what if the no. of arguments are more 
+and the person makes a mistake in passing 
+them i.e the order while defining the function
+so .... better option : now in this below case 
+the order of arguments while defining the function
+doesn't matter
+MyCars = (color,brand,type,year) => {
+
+}
+const cars =  
+{
+brand:"ford",
+color:"Red",
+type:"Fast",
+year:2021
+}
+Mycars(cars);
+
+VIDEO 68: PROMISES And Fetch
+
+what you think :  const Fetch http(url) => Make a Request => GetData From the Server => Do something with that data
+what actually happens: const Fetch http(url) => Make a Request =>  GetData From the Server (Takes Time) the application does not stops =>  Do something with that data
+so by the time data is returned the application moved forward so app fails!!!
+Solution:
+const Fetch http(url) => Make a Request => GetData From the Server => Promise(Pauses the application till a task is complete) => then => DOSomething
+
+
+VIDEO 69: PROMISES And Fetch
+Promises not related to fetch nor to Asynchronus
+3 states of promises :
+1. UNRESOLVED/PENDING 
+2. RESOLVED/FULFILD : everything good solved
+3. REJECTED : if error
+
+Whenever we get Resolved we need a way to catch this event . So we used the keyword "THEN" and if it gets rejected then we use "CATCH"
+
+
+VIDEO 69: PROMISES And Fetch
+json placeholder : Fake database 
+so copy url from jsonplaceholder
+inspect => network => 1 (The request that we made) => response
+
+VIDEO 72-73 : strings and numbers
+
+VIDEO 74 : Modules(import and export)
+
+VIDEO 75: Modules
+
+VIDEO 76:Generators
+

@@ -1,0 +1,27 @@
+<html>
+<script>
+	const car = {
+		id:1,
+		brand:"ford",
+		door:4,
+		wheels:4,
+		color:"red",
+		year:2021,
+		model:"ford"
+	}
+function *carsGenerator(carObj)
+{
+   yield carObj.brand;
+   yield carObj.year;
+   yield carObj.model;
+
+}	
+let newCar =[];
+for(let i of carsGenerator(car))
+{
+	newCar = [...newCar,i]
+}
+console.log(newCar);
+
+</script>	
+</html>

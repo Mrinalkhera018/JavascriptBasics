@@ -1,0 +1,19 @@
+<html>
+<script>
+const users = [
+{name:'John' , lastname:'Doe' , age:25},
+{name:'Francis' , lastname:'Paul' , age:35}
+];
+//const lastname = users[0].lastname;
+const [{lastname}] = users;
+console.log(lastname);
+
+const anotherUsers = {
+	names :['JOhn','Martha','Arya','Nick']
+}
+// const {names} = anotherUsers;
+// console.log(names);
+const {names:[name1]} = anotherUsers;
+console.log(name1);
+</script>
+</html> 
